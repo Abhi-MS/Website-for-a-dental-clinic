@@ -268,6 +268,94 @@ section{
 
 }
 
+/* team */
+.team .row{
+    margin-top: 2rem;
+}
+.team-item{
+    margin: 2rem 0;
+}
+.team-img{
+    position: relative;
+}
+.team-icons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: var(--white-smoke);
+    opacity: 0;
+    transition: var(--transition);
+}
+.team-icons a{
+    color: var(--night-rider);
+    width: 50px;
+    height: 50px;
+    transition: var(--transition);
+}
+.team-icons a:hover{
+    background: var(--mount-meadow);
+    color: #fff;
+}
+.team-img:hover .team-icons{
+    opacity: 1;
+}
+.team-info{
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 1;
+}
+.team-info h3{
+    font-size: 1.4rem;
+    color: var(--night-rider);
+}
+.team-info span{
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+/* pricing */
+.pricing .row{
+    margin-top: 2rem;
+}
+.pricing-item{
+    border: 2.5px solid #f9f9f9;
+    text-align: center;
+    padding: 3.4rem 0;
+    margin: 2rem 0;
+}
+.pricing-item h2{
+    color: var(--night-rider);
+    opacity: 0.7;
+    font-size: 1.5rem;
+}
+.pricing-item .price{
+    padding: 1.5rem 0 1rem 0;
+    line-height: 1.1;
+}
+.pricing-item .price span{
+    display: block;
+}
+.pricing-item .price span:first-child{
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+    color: var(--mount-meadow);
+}
+.pricing-item .price span:last-child{
+    font-size: 0.85rem;
+    letter-spacing: 1;
+    font-weight: 500;
+}
+.pricing-item ul li{
+    padding: 0.8rem 0;
+    opacity: 0.7;
+}
+
+
+
+
 
 /* #### Media Queries #### */
 @media screen and (min-width: 768px){
@@ -277,6 +365,25 @@ section{
         gap: 2rem;
     }
     .detail-item{
+        margin: 0;
+    }
+    .video h2{
+        font-size: 2.6rem;
+    }
+    .video p{
+        font-size: 1.2rem;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .team-item{
+        margin: 0;
+    }
+    .pricing .row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .pricing-item{
         margin: 0;
     }
 }
@@ -352,5 +459,9 @@ section{
     .detail .row{
         grid-template-columns: repeat(3, 1fr);
     }
+    .pricing .row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     
 }

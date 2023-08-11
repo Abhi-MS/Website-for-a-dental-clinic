@@ -99,6 +99,7 @@ section{
 .navbar-brand{
     font-weight: 500;
     color: var(--night-rider);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar-brand span{
     color: var(--mount-meadow);
@@ -354,9 +355,6 @@ section{
 }
 
 /* Contact */
-.contact .row{
-    margin-top: 2rem;
-}
 .contact .row > div{
     margin: 2rem 0;
     padding: 1rem 0;
@@ -509,6 +507,7 @@ section{
         display: inline-block;
         margin-right: 0.8rem;
     }
+   
 
     /* navbar changes */
     .cng-navbar{

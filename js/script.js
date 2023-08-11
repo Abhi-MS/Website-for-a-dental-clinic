@@ -11,7 +11,7 @@ $(document).ready(function(){
         if(pos>=100){
             $('.navbar').addClass('cng-navbar');
         }else{
-            $('.navbar').removwClass('cng-navbar');
+            $('.navbar').removeClass('cng-navbar');
             
         }
     });
